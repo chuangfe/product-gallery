@@ -1,0 +1,369 @@
+// class 樣式, 需要手動添加, 可能會修改或新增或刪除的樣式
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+@charset "UTF-8";
+@import "./variable";
+@import "./methods";
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// 本章重點
+.item-padding-top-200 {
+  // 200 為希望高度
+  // 960 為父層容器 .warp 的寬度
+  // 200 / 960 * 100 = 20.833333
+  padding-top: 20.833333%;
+}
+
+// 本章重點
+.item-padding-top-100 {
+  // 100 為希望高度
+  // 960 為父層容器 .warp 的寬度
+  // 100 / 960 * 100 = 10.416666
+  // padding-top: 10.416666%;
+  padding-top: calcPercentage(100, 960);
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// 本章重點
+.item-1 {
+  .title {
+    transform: translateY(-32%);
+  }
+
+  .text {
+    transform: rotate(90deg) translateX(-78%);
+    transform-origin: left bottom;
+    left: 100%;
+    bottom: 0px;
+  }
+
+  .number {
+    transform: translateY(100%);
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .pic-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .striped {
+    transform: translate(25%, 50%);
+    bottom: 0px;
+  }
+
+  .bordered {
+    transform: translate(25%, -25%);
+    right: 0px;
+    top: 0px;
+  }
+
+  .rectangle {
+    display: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-2 {
+  .item-content {
+    overflow: hidden;
+  }
+
+  .title {
+    transform: translateY(6%);
+    left: 50%;
+    top: 80%;
+  }
+
+  .text {
+    transform: translate(-10%, -100%);
+    left: 25%;
+    top: 25%;
+  }
+
+  .number {
+    right: 0px;
+    top: 0px;
+  }
+
+  .pic-container {
+    width: 50%;
+    height: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .striped {
+    display: none;
+  }
+
+  .bordered {
+    right: 0px;
+    top: 0px;
+  }
+
+  .rectangle {
+    transform: translate(-25%, 25%);
+    right: 0;
+    top: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-3 {
+  .title {
+    transform: translateY(-100%);
+    right: 0px;
+    top: 0px;
+  }
+
+  .text {
+    transform: translateX(16%);
+    left: 0px;
+    top: 50%;
+  }
+
+  .number {
+    transform: translateX(100%);
+    right: 0px;
+    top: 50%;
+  }
+
+  .pic-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .striped {
+    display: none;
+  }
+
+  .bordered {
+    right: 0px;
+    top: 0px;
+    transform: translate(25%, 25%);
+  }
+
+  .rectangle {
+    transform: translateY(-25%);
+    left: 0;
+    top: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-4 {
+  .title {
+    width: auto;
+    transform: rotate(-90deg) translate(-100%, -100%);
+    transform-origin: left top;
+    left: 50%;
+    top: 0px;
+  }
+
+  .text {
+    transform: rotate(90deg) translate(-62%, -40%);
+    right: 0px;
+    top: 0px;
+  }
+
+  .number {
+    transform: translateX(-100%);
+    left: 50%;
+    bottom: 0px;
+  }
+
+  .pic-container {
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+  }
+
+  .striped {
+    transform: translateY(50%);
+    right: 0%;
+    bottom: 0%;
+  }
+
+  .bordered {
+    right: 0px;
+    top: 0px;
+    transform: translate(-25%, -50%);
+  }
+
+  .rectangle {
+    display: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-5 {
+  width: 100%;
+
+  // 本章重點
+  .item-content {
+    // 200 為希望高度
+    // 960 為父層容器 .warp 的寬度
+    // 200 / 960 * 100 = 20.833333
+    // padding-bottom: 20.833333%;
+    padding-bottom: calcPercentage(200, 960);
+  }
+
+  .title {
+    bottom: 50%;
+  }
+
+  .text {
+    transform: translateX(4%);
+    left: 50%;
+    top: 0px;
+  }
+
+  .number {
+    left: 12.5%;
+    bottom: 0px;
+  }
+
+  .pic-container {
+    width: 25%;
+    height: 100%;
+    transform: translateX(100%);
+  }
+
+  .striped {
+    width: 25%;
+    height: 50%;
+    transform: translate(25%, -50%);
+    left: 0px;
+    top: 0px;
+  }
+
+  .bordered {
+    width: 25%;
+    transform: translate(-50%, 50%);
+    left: 25%;
+    bottom: 0px;
+  }
+
+  .rectangle {
+    display: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-6 {
+  .title {
+    width: auto;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: left top;
+    left: 50%;
+    top: 0px;
+  }
+
+  .text {
+    transform: translateY(-100%);
+  }
+
+  .number {
+    transform: translateX(-100%);
+    left: 75%;
+    bottom: 0px;
+  }
+
+  .pic-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .striped {
+    display: none;
+  }
+
+  .bordered {
+    width: 50%;
+    height: 100%;
+    transform: translate(25%, -12.5%);
+    left: 0%;
+    top: 0%;
+  }
+
+  .rectangle {
+    transform: translateX(50%);
+    left: 0;
+    bottom: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.item-7 {
+  .title {
+    transform: translateY(-100%);
+    right: 0px;
+    top: 0px;
+  }
+
+  .text {
+    transform: translate(-50%, 110%);
+    left: 50%;
+    bottom: 0px;
+  }
+
+  .number {
+    transform: translate(-104%, 32%);
+    left: 0px;
+    top: 33.333333%;
+  }
+
+  .pic-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .striped {
+    display: none;
+  }
+
+  .bordered {
+    width: 100%;
+    transform: translate(0%, 25%);
+    left: 0%;
+    bottom: 0%;
+  }
+
+  .rectangle {
+    transform: translateX(-25%);
+    left: 0;
+    bottom: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
