@@ -166,6 +166,7 @@ body {
 }
 
 .header .title {
+  padding-top: 40px;
   font-family: "Roboto", sans-serif;
   font-size: 72px;
   font-weight: 900;
@@ -173,23 +174,6 @@ body {
   height: 1em;
   line-height: 1em;
   text-align: center;
-}
-
-.header .text-container {
-  margin-top: 32px;
-  margin-bottom: 20px;
-  text-align: center;
-  line-height: normal;
-}
-
-.header .text {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  color: white;
-  height: 1em;
-  line-height: 1em;
-  background-color: #000;
 }
 
 .warp {
@@ -214,6 +198,12 @@ body {
   position: relative;
 }
 
+.item .title-container {
+  display: block;
+  position: absolute;
+  z-index: 4;
+}
+
 .item .title {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
@@ -222,8 +212,6 @@ body {
   height: 1em;
   line-height: 1em;
   white-space: nowrap;
-  position: absolute;
-  z-index: 4;
 }
 
 .item .title::after, .item .title::before {
@@ -277,9 +265,18 @@ body {
   overflow: hidden;
   position: absolute;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.item .pic {
+.item .pic-container .pic {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -320,7 +317,7 @@ body {
   padding-top: 10.41667%;
 }
 
-.item-1 .title {
+.item-1 .title-container {
   -webkit-transform: translateY(-32%);
           transform: translateY(-32%);
 }
@@ -343,7 +340,8 @@ body {
 
 .item-1 .pic-container {
   width: 100%;
-  height: 100%;
+  height: 75%;
+  top: 8.5%;
 }
 
 .item-1 .striped {
@@ -367,7 +365,7 @@ body {
   overflow: hidden;
 }
 
-.item-2 .title {
+.item-2 .title-container {
   -webkit-transform: translateY(6%);
           transform: translateY(6%);
   left: 50%;
@@ -409,7 +407,7 @@ body {
   top: 0;
 }
 
-.item-3 .title {
+.item-3 .title-container {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   right: 0px;
@@ -431,8 +429,9 @@ body {
 }
 
 .item-3 .pic-container {
-  width: 100%;
+  width: 50%;
   height: 50%;
+  left: 25%;
 }
 
 .item-3 .striped {
@@ -453,7 +452,7 @@ body {
   top: 0;
 }
 
-.item-4 .title {
+.item-4 .title-container {
   width: auto;
   -webkit-transform: rotate(-90deg) translate(-100%, -100%);
           transform: rotate(-90deg) translate(-100%, -100%);
@@ -510,7 +509,7 @@ body {
   padding-bottom: 20.83333%;
 }
 
-.item-5 .title {
+.item-5 .title-container {
   bottom: 50%;
 }
 
@@ -554,7 +553,7 @@ body {
   display: none;
 }
 
-.item-6 .title {
+.item-6 .title-container {
   width: auto;
   -webkit-transform: rotate(90deg) translateY(-100%);
           transform: rotate(90deg) translateY(-100%);
@@ -601,7 +600,7 @@ body {
   bottom: 0;
 }
 
-.item-7 .title {
+.item-7 .title-container {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   right: 0px;

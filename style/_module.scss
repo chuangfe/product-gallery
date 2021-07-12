@@ -20,20 +20,9 @@
 
 .header {
   & .title {
+    padding-top: 40px;
     @include font($font-size-1, $font-weight-900);
     text-align: center;
-  }
-
-  & .text-container {
-    margin-top: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: normal;
-  }
-
-  & .text {
-    @include font($font-size-4, $font-weight-900, $white-100);
-    background-color: $black-100;
   }
 }
 
@@ -71,11 +60,15 @@
   // ---------------------------------------------------------------------------
   // ---------------------------------------------------------------------------
 
+  .title-container {
+    display: block;
+    position: absolute;
+    z-index: 4;
+  }
+
   .title {
     @include font($font-size-2, $font-weight-900);
     white-space: nowrap;
-    position: absolute;
-    z-index: 4;
 
     &::after,
     &::before {
@@ -132,12 +125,15 @@
     overflow: hidden;
     position: absolute;
     z-index: 2;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   // ---------------------------------------------------------------------------

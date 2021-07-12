@@ -35,7 +35,7 @@
 
 // 本章重點
 .item-1 {
-  .title {
+  .title-container {
     transform: translateY(-32%);
   }
 
@@ -54,7 +54,8 @@
 
   .pic-container {
     width: 100%;
-    height: 100%;
+    height: 75%;
+    top: 8.5%;
   }
 
   .striped {
@@ -82,7 +83,7 @@
     overflow: hidden;
   }
 
-  .title {
+  .title-container {
     transform: translateY(6%);
     left: 50%;
     top: 80%;
@@ -126,7 +127,7 @@
 // -----------------------------------------------------------------------------
 
 .item-3 {
-  .title {
+  .title-container {
     transform: translateY(-100%);
     right: 0px;
     top: 0px;
@@ -145,8 +146,9 @@
   }
 
   .pic-container {
-    width: 100%;
+    width: 50%;
     height: 50%;
+    left: 25%;
   }
 
   .striped {
@@ -171,7 +173,7 @@
 // -----------------------------------------------------------------------------
 
 .item-4 {
-  .title {
+  .title-container {
     width: auto;
     transform: rotate(-90deg) translate(-100%, -100%);
     transform-origin: left top;
@@ -230,7 +232,7 @@
     padding-bottom: calcPercentage(200, 960);
   }
 
-  .title {
+  .title-container {
     bottom: 50%;
   }
 
@@ -276,7 +278,7 @@
 // -----------------------------------------------------------------------------
 
 .item-6 {
-  .title {
+  .title-container {
     width: auto;
     transform: rotate(90deg) translateY(-100%);
     transform-origin: left top;
@@ -323,7 +325,7 @@
 // -----------------------------------------------------------------------------
 
 .item-7 {
-  .title {
+  .title-container {
     transform: translateY(-100%);
     right: 0px;
     top: 0px;
