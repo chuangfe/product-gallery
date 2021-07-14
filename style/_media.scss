@@ -1,0 +1,49 @@
+// 0px ~ 575px
+@media only screen and (max-width: $width-size-none) {
+  html {
+    font-size: 8px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item-3,
+  .item-4,
+  .item-6 {
+    padding-top: 6.25rem;
+  }
+
+  .item-3 {
+    .pic-container {
+      width: 75%;
+      height: 75%;
+      left: 12.5%;
+    }
+  }
+
+  .item-5 {
+    padding: 12.5rem 0 6.25rem 0;
+  }
+}
+
+// 576px ~ 767px
+@media only screen and (min-width: $width-size-s) {
+  html {
+    font-size: 12px;
+  }
+}
+
+// 767px ~ 960px
+@media only screen and (min-width: $width-size-m) {
+  html {
+    font-size: 14px;
+  }
+}
+
+// 960px 以上
+@media only screen and (min-width: $width-size-l) {
+  html {
+    font-size: 16px;
+  }
+}

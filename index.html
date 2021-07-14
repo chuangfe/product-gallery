@@ -19,8 +19,28 @@
       </a>
     </header>
 
-    <main class="warp">
-      <div class="item item-1 item-padding-top-100">
+    <main id="app" class="warp">
+      <div
+        class="item"
+        v-for="(item, i) of products"
+        :class="getItemClass(i+1)"
+      >
+        <div class="item-content">
+          <a :href="item.githubSrc" target="_blank" class="title-container">
+            <h2 class="title" :data-title="item.title">{{item.title}}</h2>
+          </a>
+          <p class="text">{{item.text}}</p>
+          <p class="number">{{getNumberPadStart(i+1)}}</p>
+          <a :href="item.githubPagesSrc" target="_blank" class="pic-container">
+            <img :src="item.imageSrc" class="pic" />
+          </a>
+          <div class="striped"></div>
+          <div class="bordered"></div>
+          <div class="rectangle"></div>
+        </div>
+      </div>
+
+      <!-- <div class="item item-1">
         <div class="item-content">
           <a
             href="https://github.com/chuangfe/carousel"
@@ -36,7 +56,7 @@
             target="_blank"
             class="pic-container"
           >
-            <img src="./images/carousel.png" class="pic" />
+            <img src="./images/carousel-01.jpg" class="pic" />
           </a>
           <div class="striped"></div>
           <div class="bordered"></div>
@@ -44,7 +64,7 @@
         </div>
       </div>
 
-      <div class="item item-2 item-padding-top-100">
+      <div class="item item-2">
         <div class="item-content">
           <a
             href="https://github.com/chuangfe/carousel-vue"
@@ -60,7 +80,7 @@
             target="_blank"
             class="pic-container"
           >
-            <img src="./images/carousel.png" class="pic" />
+            <img src="./images/carousel-02.png" class="pic" />
           </a>
           <div class="striped"></div>
           <div class="bordered"></div>
@@ -68,7 +88,7 @@
         </div>
       </div>
 
-      <div class="item item-3 item-padding-top-200">
+      <div class="item item-3">
         <div class="item-content">
           <a
             href="https://github.com/chuangfe/mask-map"
@@ -92,7 +112,7 @@
         </div>
       </div>
 
-      <div class="item item-4 item-padding-top-200">
+      <div class="item item-4">
         <div class="item-content">
           <a
             href="https://github.com/chuangfe/todomvc-vue"
@@ -132,7 +152,7 @@
         </div>
       </div>
 
-      <div class="item item-6 item-padding-top-200">
+      <div class="item item-6">
         <div class="item-content">
           <a href="javascript:;" class="title-container">
             <h2 class="title" data-title="EDITION">EDITION</h2>
@@ -148,7 +168,7 @@
         </div>
       </div>
 
-      <div class="item item-7 item-padding-top-100">
+      <div class="item item-7">
         <div class="item-content">
           <a href="javascript:;" class="title-container">
             <h2 class="title" data-title="VINTAGE DENIM">VINTAGE DENIM</h2>
@@ -162,8 +182,11 @@
           <div class="bordered"></div>
           <div class="rectangle"></div>
         </div>
-      </div>
+      </div> -->
     </main>
     <footer id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./dist/script/script.js"></script>
   </body>
 </html>
