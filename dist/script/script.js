@@ -25,6 +25,13 @@
           githubPagesSrc: "https://chuangfe.github.io/mask-map/dist",
         },
         {
+          title: "Pokemon Store",
+          text: "VUE",
+          imageSrc: "./images/pokemon.png",
+          githubSrc: "https://github.com/chuangfe/pokemon-store",
+          githubPagesSrc: "https://chuangfe.github.io/pokemon-store/dist/",
+        },
+        {
           title: "TODO MVC",
           text: "VUE",
           imageSrc: "./images/todo-mvc.png",

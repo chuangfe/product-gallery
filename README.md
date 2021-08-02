@@ -10,11 +10,13 @@ https://chuangfe.github.io/product-gallery/
 
 - [Carousel](https://github.com/chuangfe/carousel)
 
-- [Carousel-Vue](https://github.com/chuangfe/carousel-vue)
+- [Carousel Vue](https://github.com/chuangfe/carousel-vue)
 
-- [Mask-Map](https://github.com/chuangfe/mask-map)
+- [Mask Map](https://github.com/chuangfe/mask-map)
 
-- [Todo-Mvc](https://github.com/chuangfe/todomvc-vue)
+- [Pokemon Store](https://github.com/chuangfe/pokemon-store)
+
+- [Todo Mvc](https://github.com/chuangfe/todomvc-vue)
 
 ## Copyright©
 

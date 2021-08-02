@@ -487,6 +487,11 @@ body {
           transform: translateX(100%);
 }
 
+.item-4 .pic-container .pic {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .item-4 .striped {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -663,6 +668,7 @@ body {
   }
   .item {
     width: 100%;
+    overflow: hidden;
   }
   .item-3,
   .item-4,
@@ -675,7 +681,7 @@ body {
     left: 12.5%;
   }
   .item-5 {
-    padding: 12.5rem 0 6.25rem 0;
+    padding: 9.375rem 0 6.25rem 0;
   }
 }
 
@@ -698,6 +704,6 @@ body {
 }
 
 html {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

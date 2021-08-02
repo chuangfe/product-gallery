@@ -6,6 +6,7 @@
 
   .item {
     width: 100%;
+    overflow: hidden;
   }
 
   .item-3,
@@ -23,7 +24,7 @@
   }
 
   .item-5 {
-    padding: 12.5rem 0 6.25rem 0;
+    padding: 9.375rem 0 6.25rem 0;
   }
 }
 
