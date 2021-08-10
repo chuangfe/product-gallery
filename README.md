@@ -16,6 +16,8 @@ https://chuangfe.github.io/product-gallery/
 
 - [Pokemon Store](https://github.com/chuangfe/pokemon-store)
 
+- [Blog Zine](https://github.com/chuangfe/blogzine)
+
 - [Todo Mvc](https://github.com/chuangfe/todomvc-vue)
 
 ## Copyright©
